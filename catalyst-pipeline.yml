@@ -2,7 +2,7 @@ version: 1.0
 jobs:
   hello:
     steps:
-      - ls -a
+      - catalyst deploy
   world:
     steps:
       - echo "World"
@@ -12,6 +12,5 @@ jobs:
 stages:
   - name: build
     jobs:
-      - - hello
-        - world
+      - hello
       - hello-world
