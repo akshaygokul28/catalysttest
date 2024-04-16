@@ -3,6 +3,7 @@ jobs:
   hello:
     steps:
       - ls -a
+      - catalyst serve
   world:
     steps:
       - echo "World"
