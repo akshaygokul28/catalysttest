@@ -1,0 +1,35 @@
+[debug] [2023-08-23T09:39:09.442Z] : 
+[debug] [2023-08-23T09:39:09.442Z] : ----------------------------------------------------------------------
+[debug] [2023-08-23T09:39:09.442Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst deploy --only functions:Functions
+[debug] [2023-08-23T09:39:09.442Z] : CLI Version:  1.15.0-beta.7
+[debug] [2023-08-23T09:39:09.442Z] : Platform:     darwin
+[debug] [2023-08-23T09:39:09.442Z] : Node Version: v18.16.0
+[debug] [2023-08-23T09:39:09.443Z] : Time:         Wed Aug 23 2023 15:09:09 GMT+0530 (India Standard Time)
+[debug] [2023-08-23T09:39:09.443Z] : ----------------------------------------------------------------------
+[debug] [2023-08-23T09:39:09.443Z] : 
+[debug] [2023-08-23T09:39:09.807Z] : > authorizing via signed-in user option
+[debug] [2023-08-23T09:39:09.807Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL","ZohoCatalyst.appsail.Update"]
+[debug] [2023-08-23T09:39:09.812Z] : > refreshing access token <
+[debug] [2023-08-23T09:39:09.812Z] : >>>> HTTP REQUEST : POST https://accounts.localzoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2023-08-23T09:39:10.383Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 23 Aug 2023 09:39:10 GMT","content-type":"application/json;charset=UTF-8","content-length":"1885","connection":"close","set-cookie":["dfa0794052=f8deb93269dfa2124a58d06baea23f36; Path=/","iamcsr=dd6d3989-cd1e-431e-82a5-559f2f3bb000;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=dd6d3989-cd1e-431e-82a5-559f2f3bb000;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-08-23T09:39:10.401Z] : >>>> HTTP REQUEST : GET https://console.catalyst.localzoho.com/baas/v1/project/6753000000321001 
+
+[debug] [2023-08-23T09:39:10.924Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 23 Aug 2023 09:39:10 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","x-xss-protection":"1","set-cookie":["ZD_CSRF_TOKEN=59b41aa8-7193-4491-b446-71a89cb7d208;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=59b41aa8-7193-4491-b446-71a89cb7d208;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-08-23T09:39:10.928Z] : >>>> HTTP REQUEST : GET https://console.catalyst.localzoho.com/baas/v1/project/6753000000321001/environment 
+
+[debug] [2023-08-23T09:39:11.013Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 23 Aug 2023 09:39:11 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","x-xss-protection":"1","set-cookie":["ZD_CSRF_TOKEN=313ec7a5-8a4c-4ae2-a8c3-f016cf81e2f8;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=313ec7a5-8a4c-4ae2-a8c3-f016cf81e2f8;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-08-23T09:39:11.026Z] : >>>> HTTP REQUEST : GET https://console.catalyst.localzoho.com/baas/v1/project/6753000000321001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic"}
+
+[debug] [2023-08-23T09:39:11.349Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 23 Aug 2023 09:39:11 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","x-xss-protection":"1","set-cookie":["ZD_CSRF_TOKEN=ee24d1b6-954a-40cb-be6e-0e98a111ab1c;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=ee24d1b6-954a-40cb-be6e-0e98a111ab1c;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-08-23T09:39:11.356Z] : unknown eol undefined hence skipping check

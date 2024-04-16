@@ -1,0 +1,11 @@
+{
+	"name": "sdk_functions",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "akshaygokul.gr@zohocorp.com",
+	"dependencies": {
+		"express": "^4.18.2",
+		"express-fileupload": "^1.4.0",
+		"zcatalyst-sdk-node": "latest"
+	}
+}

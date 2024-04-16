@@ -1,0 +1,11 @@
+{
+	"execution": {
+		"main": "index.js"
+	},
+	"deployment": {
+		"stack": "node16",
+		"name": "PushNotifications",
+		"type": "advancedio",
+		"env_variables": {}
+	}
+}

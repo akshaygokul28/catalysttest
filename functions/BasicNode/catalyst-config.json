@@ -1,0 +1,11 @@
+{
+	"execution": {
+		"main": "index.js"
+	},
+	"deployment": {
+		"stack": "node16",
+		"name": "BasicNode",
+		"type": "basicio",
+		"env_variables": {}
+	}
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+        <script src="https://static.zohocdn.com/catalyst/sdk/js/3.0.0/catalystWebSDK.js"></script>
+        <script src="/__catalyst/sdk/init.js"></script>
+    <script src="main.js"></script>
+    <script src="signin.js"></script>
+</head>
+
+<body id = "setcolor">
+    <div class="header">
+        <h1>Node js SDK Self Testing Application</h1>
+
+    </div>
+    <br>
+    <div id="loader" style="display: none;">
+        <div id="globalrun" class="dataDiv"></div>
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+   
+    <input type= "checkbox" id= "s1" class= "lg" >
+    <br>
+    <button id="button1" type="submit" class="btn btn-primary" onclick="testfilestore('filestore');">Filestore</button>
+    <button id="close" type="submit" class="btn btn-primary" onclick="terminatefs();" style="font-size:30px;color:#DE2839"></button>
+    <button id="button14" type="submit" class="btn btn-primary" onclick="testrun();">Global Run</button>
+    <button id="close2" type="submit" class="btn btn-primary" onclick="terminategr();"></button>
+    <div id="filestore" class="dataDiv"></div>
+    <div id="loader1" style="display: none;">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    </div>
+
+    <input type= "checkbox" id= "s2" class= "lg" >
+    <br>
+    <button id="button2" type="submit" class="btn btn-primary" onclick="testdatastore('datastore');">Datastore</button>
+    <button id="close1" type="submit" class="btn btn-primary" onclick="terminateds();"></button><br><br>
+    <div id="datastore" class="dataDiv"></div>
+    <div id="loader" style="display: none;">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <input type= "checkbox" id= "s3" class= "lg" >
+    <br>
+    <button id="button3" type="submit" class="btn btn-primary" onclick="testcache('cache');">Cache</button>
+    <button id="close1" type="submit" class="btn btn-primary" onclick="terminatecache();"></button><br><br>
+    <div id="cache" class="dataDiv"></div>
+    <div id="loader" style="display: none;">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <input type= "checkbox" id= "s4" class= "lg" >
+    <br>
+    <button id="button3" type="submit" class="btn btn-primary" onclick="testfunctions('fun');">Functions</button>
+    <button id="close1" type="submit" class="btn btn-primary" onclick="terminatefun();"></button><br><br>
+    <div id="fun" class="dataDiv"></div>
+    <div id="loader" style="display: none;">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <input type= "checkbox" id= "s5" class= "lg" >
+    <br>
+    <button id="button5" type="submit" class="btn btn-primary" onclick="testsearch('search');">Search</button>
+    <button id="close1" type="submit" class="btn btn-primary" onclick="terminatesearch();"></button><br><br>
+    <div id="search" class="dataDiv"></div>
+    <div id="loader" style="display: none;">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <input type= "checkbox" id= "s6" class= "lg" >
+    <br>
+    <button id="button6" type="submit" class="btn btn-primary" onclick="testmail('mail');">Mail</button>
+    <button id="close1" type="submit" class="btn btn-primary" onclick="terminatemail();"></button><br><br>
+    <div id="mail" class="dataDiv"></div>
+    <div id="loader" style="display: none;">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <input type= "checkbox" id= "s7" class= "lg" >
+    <br>
+    <button id="button7" type="submit" class="btn btn-primary" onclick="testpushnotification('push');">Push Notifications</button>
+    <button id="close1" type="submit" class="btn btn-primary" onclick="terminatenotification();"></button><br><br>
+    <div id="push" class="dataDiv"></div>
+    <div id="loader" style="display: none;">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <input type= "checkbox" id= "s8" class= "lg" >
+    <br>
+    <button id="button8" type="submit" class="btn btn-primary" onclick="testzia('zia');">Zia</button>
+    <button id="close1" type="submit" class="btn btn-primary" onclick="terminatezia();"></button><br><br>
+    <div id="zia" class="dataDiv"></div>
+    <div id="loader" style="display: none;">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <input type= "checkbox" id= "s9" class= "lg" >
+    <br>
+    <button id="button9" type="submit" class="btn btn-primary" onclick="testZCQL();">ZCQL</button>
+    <button id="close1" type="submit" class="btn btn-primary" onclick="terminatezcql();"></button><br><br>
+    <div id="zcql" class="dataDiv"></div>
+    <div id="zcql1" class="dataDiv"></div>
+    <div id="zcql2" class="dataDiv"></div>
+    <div id="zcql3" class="dataDiv"></div>
+    <div id="loader" style="display: none;">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <input type= "checkbox" id= "s10" class= "lg" >
+    <br>
+    <button id="button11" type="submit" class="btn btn-primary" onclick="testcircuits('circuit');">Circuits</button>
+    <button id="close1" type="submit" class="btn btn-primary" onclick="terminatecircuit();"></button><br><br>
+    <div id="circuit" class="dataDiv"></div>
+    <div id="loader" style="display: none;">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <input type= "checkbox" id= "s11" class= "lg" >
+    <br>
+    <button id="button12" type="submit" class="btn btn-primary" onclick="testpermission('permission');">Permissions</button>
+    <button id="close1" type="submit" class="btn btn-primary" onclick="terminatepermission();"></button><br><br>
+    <div id="permission" class="dataDiv"></div>
+    <div id="loader" style="display: none;">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    
+    <input type= "checkbox" id= "s12" class= "lg" >
+    <br>
+    <button id="button13" type="submit" class="btn btn-primary" onclick="testauthentication('authentication');">Authentication</button>
+    <button id="closeauth" type="submit" class="btn btn-primary" onclick="terminateauth();"></button><br><br>
+    <div id="authentication" class="dataDiv"></div>
+    <div id="loader" style="display: none;">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <br>
+    <button id="button16" type="submit" class="btn btn-primary" onclick="tsmartbrowz();">Smartbrowz</button>
+    <button id="close1" type="submit" class="btn btn-primary" onclick="terminatesmartbrowz();"></button><br><br>
+    <div id="smartbrowz" class="dataDiv"></div>
+    <div id="smartbrowz1" class="dataDiv"></div>
+    <div id="smartbrowz2" class="dataDiv"></div>
+    <div id="smartbrowz3" class="dataDiv"></div>
+    <div id="smartbrowz4" class="dataDiv"></div>
+    <div id="smartbrowz5" class="dataDiv"></div>
+    <div id="smartbrowz6" class="dataDiv"></div>
+    <div id="smartbrowz7" class="dataDiv"></div>
+    <div id="smartbrowz8" class="dataDiv"></div>
+    <div id="smartbrowz9" class="dataDiv"></div>
+    <div id="smartbrowz10" class="dataDiv"></div>
+    <div id="smartbrowz11" class="dataDiv"></div>
+    <div id="smartbrowz12" class="dataDiv"></div>
+    <div id="smartbrowz13" class="dataDiv"></div>
+    <div id="smartbrowz14" class="dataDiv"></div>
+    <div id="smartbrowz15" class="dataDiv"></div>
+    <div id="smartbrowz16" class="dataDiv"></div>
+    <div id="smartbrowz17" class="dataDiv"></div>
+    <div id="smartbrowz18" class="dataDiv"></div>
+    <div id="smartbrowz19" class="dataDiv"></div>
+    <div id="smartbrowz20" class="dataDiv"></div>
+    <div id="smartbrowz21" class="dataDiv"></div>
+    <div id="loader" style="display: none;">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <br>
+    <button id="button15" type="submit" class="btn btn-primary" onclick="getCheckboxValue();">Specific Run</button>
+    <button id="close1" type="submit" class="btn btn-primary" onclick="terminatesr();"></button>
+    <div id="loader" style="display: none;">
+        <div id="specificrun" class="dataDiv"></div>
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+
+    <br><br><br>
+
+
+
+    <button id="buttonz" type="submit" class="btn btn-primary" onclick="logout()">Logout</button>
+    <a hidden id="global" href="/server/Report/report"></a>
+</body>
+
+
+</html> 

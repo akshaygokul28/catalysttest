@@ -1,0 +1,11 @@
+{
+	"execution": {
+		"main": "index.js"
+	},
+	"deployment": {
+		"stack": "node16",
+		"name": "Cache",
+		"type": "advancedio",
+		"env_variables": {}
+	}
+}

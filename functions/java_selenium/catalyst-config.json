@@ -1,0 +1,10 @@
+{
+	"deployment": {
+		"name": "java_selenium",
+		"stack": "java8",
+		"type": "browser_logic"
+	},
+	"execution": {
+		"main": "SeleniumExample"
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"execution": {
+		"main": "index.js"
+	},
+	"deployment": {
+		"stack": "node16",
+		"name": "Cron",
+		"type": "cron",
+		"env_variables": {}
+	}
+}

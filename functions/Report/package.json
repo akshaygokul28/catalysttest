@@ -1,0 +1,9 @@
+{
+	"dependencies": {
+		"excel4node": "^1.8.2",
+		"express": "4.17.1",
+		"xlsx": "^0.18.5",
+		"zcatalyst-sdk-node": "2.2.1"
+	},
+	"main": "index.js"
+}
