@@ -9,7 +9,20 @@
       "DataStore",
       "Cache",
       "Functions",
-      "Search"
+      "Search",
+      "Mail",
+      "PushNotifications",
+      "Zia",
+      "ZCQL",
+      "Authentication",
+      "Circuits",
+      "Permissions",
+      "Report",
+      "Endpoint",
+      "smartbrowzcall",
+      "smartbrowzreport",
+      "java_selenium",
+      "sdk_application_function"
     ],
     "ignore": [
       ".output"
