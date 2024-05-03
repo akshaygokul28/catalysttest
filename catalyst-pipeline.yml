@@ -2,7 +2,7 @@ version: 1.0
 jobs:
   hello:
     steps:
-      - catalyst serve
+      - catalyst deploy
   world:
     steps:
       - echo "World"
