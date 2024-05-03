@@ -4,6 +4,7 @@ jobs:
     steps:
       - ls -a
       - catalyst serve
+      - curl http://localhost:3000/server/FileStore/
   world:
     steps:
       - echo "World"
