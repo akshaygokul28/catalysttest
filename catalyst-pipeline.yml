@@ -2,9 +2,8 @@ version: 1.0
 jobs:
   hello:
     steps:
-      - ls -a
       - catalyst serve
-      - curl http://localhost:3000/server/FileStore/
+      - curl http://localhost:3000/server/FileStore/filestore
   world:
     steps:
       - echo "World"
