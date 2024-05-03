@@ -1,28 +1,7 @@
 {
   "functions": {
     "targets": [
-      "BasicNode",
-      "sdk_functions",
-      "Cron",
-      "catalystsdkautomation",
-      "FileStore",
-      "DataStore",
-      "Cache",
-      "Functions",
-      "Search",
-      "Mail",
-      "PushNotifications",
-      "Zia",
-      "ZCQL",
-      "Authentication",
-      "Circuits",
-      "Permissions",
-      "Report",
-      "Endpoint",
-      "smartbrowzcall",
-      "smartbrowzreport",
-      "java_selenium",
-      "sdk_application_function"
+      "BasicNode"
     ],
     "ignore": [
       ".output"
