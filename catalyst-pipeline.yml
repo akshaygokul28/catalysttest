@@ -3,7 +3,6 @@ jobs:
   hello:
     steps:
       - catalyst serve
-      - curl http://localhost:3000/server/FileStore/filestore
   world:
     steps:
       - echo "World"
