@@ -6,7 +6,7 @@ jobs:
       - ls -a
   world:
     steps:
-      - echo "Worldzz"
+      - echo "World"
   hello-world:
     steps:
       - echo "Hello World!"
