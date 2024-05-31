@@ -2,10 +2,10 @@ version: 1.0
 jobs:
   hello:
     steps:
-      - catalyst serve
+      - ls -a
   world:
     steps:
-      - echo "World"
+      - catalyst deploy
   hello-world:
     steps:
       - echo "Hello World!"
