@@ -2,16 +2,16 @@ version: 1.0
 jobs:
   hello:
     steps:
-      - catalyst serve
+      - catalyst deploy
   world:
     steps:
-      - catalyst deploy --verbose
+      - catalyst serve
   hello-world:
     steps:
       - echo "Hello World!"
 stages:
   - name: build
     jobs:
-      - hello
-      - world
+      - - hello
+        - world
       - hello-world
