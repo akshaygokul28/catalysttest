@@ -2,7 +2,7 @@ version: 1.0
 jobs:
   hello:
     steps:
-      - catalyst whoami
+      - catalyst serve
   world:
     steps:
       - catalyst deploy --verbose
