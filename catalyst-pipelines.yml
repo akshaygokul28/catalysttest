@@ -2,6 +2,7 @@ version: 1.0
 jobs:
   hello:
     steps:
+      - ulimit -n 4096
       - catalyst deploy
   world:
     steps:
