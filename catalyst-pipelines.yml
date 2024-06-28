@@ -2,11 +2,10 @@ version: 1.0
 jobs:
   hello:
     steps:
-      - printenv
-      - catalyst deploy
+      - catalyst serve
   world:
     steps:
-      - catalyst serve
+      - catalyst deploy
   hello-world:
     steps:
       - echo "Hello World!"
