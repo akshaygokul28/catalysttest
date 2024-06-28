@@ -3,7 +3,7 @@ jobs:
   hello:
     steps:
       - printenv
-      - catalyst serve
+      - catalyst deploy
   world:
     steps:
       - catalyst serve
