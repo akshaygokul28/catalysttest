@@ -2,7 +2,7 @@ version: 1.0
 jobs:
   hello:
     steps:
-      - catalyst serve
+      - catalyst
   world:
     steps:
       - catalyst deploy
