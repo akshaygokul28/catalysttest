@@ -9,7 +9,7 @@ jobs:
   hello-world:
     steps:
       - echo "Hello World!" 
-stages:
+stages: 
   - name: build
     jobs:
       - - hello  
