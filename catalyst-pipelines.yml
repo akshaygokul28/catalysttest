@@ -8,7 +8,7 @@ jobs:
       - catalyst deploy
   hello-world:
     steps:
-      - echo "Hello World!"
+      - echo "Hello World!" 
 stages:
   - name: build
     jobs:
