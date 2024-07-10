@@ -2,7 +2,7 @@ version: 1.0
 jobs:
   hello:
     steps:
-      - catalyst
+      - catalyst whoami
   world:
     steps:
       - printenv
@@ -13,6 +13,6 @@ jobs:
 stages: 
   - name: build
     jobs:
-      - - hello  
-        - world
+      - hello  
+        # - world
       - hello-world
