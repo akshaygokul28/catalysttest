@@ -5,7 +5,7 @@ jobs:
       - catalyst
   world:
     steps:
-      - catalyst deploy
+      - catalyst deploy --verbose
   hello-world:
     steps:
       - echo "Hello World!" 
