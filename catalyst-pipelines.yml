@@ -5,6 +5,7 @@ jobs:
       - catalyst
   world:
     steps:
+      - printenv
       - catalyst deploy --verbose
   hello-world:
     steps:
