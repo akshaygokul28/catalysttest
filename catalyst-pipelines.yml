@@ -5,8 +5,9 @@ jobs:
       - catalyst whoami
   world:
     steps:
-      - printenv
-      - catalyst deploy
+    #   - printenv
+    #   - catalyst deploy
+        - ls -a
   hello-world:
     steps:
       - echo "Hello World!" 
