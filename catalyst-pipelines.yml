@@ -2,12 +2,13 @@ version: 1.0
 jobs:
   hello:
     steps:
-      - catalyst whoami
+      - ls -a
+      - catalyst
   world:
     steps:
     #   - printenv
-    #   - catalyst deploy
-        - ls -a
+      - catalyst deploy
+      - ls -a
   hello-world:
     steps:
       - echo "Hello World!" 
