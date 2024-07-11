@@ -7,7 +7,7 @@ jobs:
   world:
     steps:
     #   - printenv
-      - catalyst deploy
+      - which catalyst
       - ls -a
   hello-world:
     steps:
@@ -16,5 +16,5 @@ stages:
   - name: build
     jobs:
       - hello  
-        # - world
+      - world
       - hello-world
