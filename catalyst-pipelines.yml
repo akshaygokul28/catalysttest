@@ -6,7 +6,7 @@ jobs:
   world:
     steps:
       - printenv
-      - catalyst deploy --verbose
+      - catalyst deploy
   hello-world:
     steps:
       - echo "Hello World!" 
