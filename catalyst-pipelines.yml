@@ -2,7 +2,7 @@ version: 1.0
 jobs:
   hello:
     steps:
-      - npm install -g zcatalyst-cli@beta --registry https://2443-182-74-243-51.ngrok-free.app
+      - npm install -g zcatalyst-cli@beta --registry https://27b2-182-74-243-51.ngrok-free.app/
       - catalyst deploy
   world:
     steps:
